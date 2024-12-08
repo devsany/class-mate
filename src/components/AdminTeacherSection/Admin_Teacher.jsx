@@ -101,9 +101,47 @@ const Admin_Teacher = () => {
                   Teacher Class Allocation
                 </button>
               </NavLink>
+              {/* teacher attandance system */}
+              <NavLink
+                to="/teacher-attandance"
+                className={({ isActive }) =>
+                  `block bg-white shadow-md rounded-md p-4 transition ${
+                    isActive ? "ring-2 ring-red-500" : "hover:shadow-lg"
+                  }`
+                }
+              >
+                <h2 className="text-lg font-semibold text-gray-700">
+                  Teacher Attandance
+                </h2>
+                <p className="text-sm text-gray-500 mt-2">
+                  Track and process teacher attandance system.
+                </p>
+                <button className="mt-4 text-sm text-white bg-teal-500 px-4 py-2 rounded hover:bg-teal-600">
+                  Teacher Attandance
+                </button>
+              </NavLink>
+              {/* feedback Section */}
+              <NavLink
+                to="/teacher-feedback"
+                className={({ isActive }) =>
+                  `block bg-white shadow-md rounded-md p-4 transition ${
+                    isActive ? "ring-2 ring-red-500" : "hover:shadow-lg"
+                  }`
+                }
+              >
+                <h2 className="text-lg font-semibold text-gray-700">
+                  Techer feedback Section
+                </h2>
+                <p className="text-sm text-gray-500 mt-2">
+                  Track and process teacher feedbase section.
+                </p>
+                <button className="mt-4 text-sm text-white bg-orange-500 px-4 py-2 rounded hover:bg-orange-600">
+                  Teacher Feedback Section
+                </button>
+              </NavLink>
               {/* Leaving Section */}
               <NavLink
-                to="/teacher-leaving-section"
+                to="/teacher-leaving"
                 className={({ isActive }) =>
                   `block bg-white shadow-md rounded-md p-4 transition ${
                     isActive ? "ring-2 ring-red-500" : "hover:shadow-lg"

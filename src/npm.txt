@@ -78,6 +78,9 @@ Teacher Management Module
       "status": "Approved"
     }
   ],
+  npm package
+  npm install jspdf
+
   "feedback": [
     {
       "from": "Principal",

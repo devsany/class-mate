@@ -11,6 +11,12 @@ import TeacherSubjectSpecialization from "./components/AdminTeacherSection/Teach
 import TeacherSubjectSpecializationID from "./components/AdminTeacherSection/TeacherSubjectSpecialization/TeacherSubjectSpecializationID";
 import TeacherClassAllocated from "./components/AdminTeacherSection/TeacherClassAllocated/TeacherClassAllocated";
 import TeacherClassAllocatedID from "./components/AdminTeacherSection/TeacherClassAllocated/TeacherClassAllocatedID";
+import TeacherAttandance from "./components/AdminTeacherSection/TeacherAttandance/TeacherAttandance";
+import TeacherAttandanceID from "./components/AdminTeacherSection/TeacherAttandance/TeacherAttandanceID";
+import TeacherLeaving from "./components/AdminTeacherSection/TeacherLeaving/TeacherLeaving";
+import TeacherLeavingID from "./components/AdminTeacherSection/TeacherLeaving/TeacherLeavingID";
+import TeacherFeedback from "./components/AdminTeacherSection/TeacherFeedback/TeacherFeedback";
+import TeacherFeedbackID from "./components/AdminTeacherSection/TeacherFeedback/TeacherFeedbackID";
 
 const App = () => {
   return (
@@ -34,18 +40,28 @@ const App = () => {
             path="/teacher-class-Allocated/:id"
             element={<TeacherClassAllocatedID />}
           />
+
           <Route
             path="/teacher-subjects-specialization/:id"
             element={<TeacherSubjectSpecializationID />}
           />
           <Route path="/cbse-teacher-module/:id" element={<TeacherCBSEID />} />
-          <Route
-            path="/teacher-leaving-section"
-            element={<Teacher_leaving_section />}
-          />
+          {/* teacher leaving section */}
+          <Route path="/teacher-leaving" element={<TeacherLeaving />} />
+          <Route path="/teacher-leaving/:id" element={<TeacherLeavingID />} />
+
+          {/* teacher feedback section */}
+          <Route path="/teacher-feedback" element={<TeacherFeedback />} />
+          <Route path="/teacher-feedback/:id" element={<TeacherFeedbackID />} />
           <Route
             path="/admin/new_teacher_entry"
             element={<Admin_Add_Teacher />}
+          />
+          {/* teacher attandance system */}
+          <Route path="/teacher-attandance" element={<TeacherAttandance />} />
+          <Route
+            path="/teacher-attandance/:id"
+            element={<TeacherAttandanceID />}
           />
         </Routes>
       </BrowserRouter>
