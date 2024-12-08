@@ -1,0 +1,97 @@
+for downloading the excell and pdf file
+npm install xlsx jspdf file-saver
+
+
+next for routine
+npm install react-pdf react-export-excel
+
+
+admin section login/logout (admin entry)
+
+Teacher Management Module 
+1. teacher entry (CRUD) 
+2. teacher attendance (daily)
+3. see summary of teacher (content graph of attendance, list of teachers)
+4. A section content list of all teacher View teacher detail and delete teacher /:id
+
+
+{
+  "teacher_id": "TCH12345",
+  "name": {
+    "first_name": "Anita",
+    "last_name": "Sharma"
+  },
+  "email": "anita.sharma@example.com",
+  "phone": "+91-9876543210",
+  "dob": "1985-04-15",
+  "gender": "Female",
+  "address": {
+    "street": "45, Green Valley",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "postal_code": "110001"
+  },
+  "qualification": [
+    {
+      "degree": "M.Sc",
+      "subject": "Mathematics",
+      "institution": "Delhi University",
+      "year_of_passing": 2008
+    }
+  ],
+  "experience": [
+    {
+      "school": "Springdale Public School",
+      "position": "Math Teacher",
+      "start_date": "2010-06-01",
+      "end_date": "2015-03-31"
+    }
+  ],
+  "cbse_training": [
+    {
+      "training_name": "Teaching Methodology for Mathematics",
+      "date": "2022-05-10",
+      "certification_id": "CBSE-MATH2022"
+    }
+  ], 
+  "subjects_specialization": ["Mathematics", "Statistics"],
+  "class_allocation": [
+    {
+      "class": "10",
+      "sections": ["A", "B"]
+    },
+    {
+      "class": "12",
+      "sections": ["C"]
+    }
+  ],
+  "attendance": {
+    "2024-12-01": "Present",
+    "2024-12-02": "Absent"
+  },
+  "leave_requests": [
+    {
+      "leave_id": "LV001",
+      "start_date": "2024-12-10",
+      "end_date": "2024-12-12",
+      "reason": "Medical",
+      "status": "Approved"
+    }
+  ],
+  "feedback": [
+    {
+      "from": "Principal",
+      "date": "2024-11-15",
+      "comment": "Excellent teaching methods in Mathematics.",
+      "rating": 4.8
+    },
+    {
+      "from": "Student",
+      "date": "2024-11-20",
+      "comment": "Explains complex topics very well.",
+      "rating": 4.5
+    }
+  ],
+  "created_at": "2024-01-15T10:00:00Z",
+  "updated_at": "2024-12-01T12:00:00Z"
+}
